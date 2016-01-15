@@ -1,7 +1,7 @@
 FROM debian:jessie
 
 RUN apt-get update
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libnet-snmp-perl munin-node
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libnet-snmp-perl munin-node munin-plugins-extra 
 RUN apt-get clean && rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/* /etc/munin/plugins/*
 
 RUN \
