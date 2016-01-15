@@ -1,1 +1,45 @@
-# docker-munin-node-snmp
+munin-node SNMP
+===============
+
+## Usage ##
+
+The following will start munin-node and autoconfigure SNMP plugins for `192.168.254.13`, it will also expose munin-node at port `12345`. `SNMP_ARGS` is passed at argument for `--snmp` when `munin-node-configure` is call upon running the container.
+
+```
+docker run -e 'SNMP_ARGS=192.168.254.13' -p 12345:4949 wyrihaximus/munin-node-snmp 
+```
+
+## Resource usage ##
+
+One of the goals is to keep this container so small and fast as possible. Currently it only uses 10MB in memory when running.
+
+![Resource Usage](resources.png)
+
+## Inspired by ##
+
+[ttakezawa/munin-node](https://github.com/ttakezawa/docker-munin-node)
+
+## License ##
+
+Copyright 2016 [Cees-Jan Kiewiet](http://wyrihaximus.net/)
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the "Software"), to deal in the Software without
+restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
