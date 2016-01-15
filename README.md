@@ -1,4 +1,4 @@
-munin-node SNMP
+[munin-node SNMP](https://hub.docker.com/r/wyrihaximus/munin-node-snmp/)
 ===============
 
 ## Usage ##
