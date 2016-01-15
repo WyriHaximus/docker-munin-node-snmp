@@ -1,4 +1,5 @@
 FROM debian:jessie
+MAINTAINER Cees-Jan Kiewiet <hi@ceesjankiewiet.nl>
 
 RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libnet-snmp-perl munin-node munin-plugins-extra
