@@ -9,6 +9,10 @@ The following will start munin-node and autoconfigure SNMP plugins for `192.168.
 docker run -e 'SNMP_ARGS=192.168.254.13' -p 12345:4949 wyrihaximus/munin-node-snmp 
 ```
 
+## Extra options ##
+
+`-e 'MUNIN_HOST_NAME=switch01'` sets the hostname reported by munin
+
 ## Resource usage ##
 
 One of the goals is to keep this container so small and fast as possible. Currently it only uses 10MB in memory when running.
