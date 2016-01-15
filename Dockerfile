@@ -1,9 +1,8 @@
 FROM debian:jessie
 
 RUN apt-get update
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libnet-snmp-perl munin-node munin-plugins-extra git ca-certificates
-RUN mkdir /tmp/munin-contrib-plugins && git clone https://github.com/munin-monitoring/contrib /tmp/munin-contrib-plugins && cp -r /tmp/munin-contrib-plugins/plugins/snmp/* /usr/share/munin/plugins/
-RUN apt-get clean && rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/* /etc/munin/plugins/* /tmp/munin-contrib-plugins
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libnet-snmp-perl munin-node munin-plugins-extra
+RUN apt-get clean && rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/* /etc/munin/plugins/*
 
 RUN \
   sed -ri 's/^log_file.*/# \0/; \
