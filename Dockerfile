@@ -1,9 +1,9 @@
 FROM debian:jessie
 MAINTAINER Cees-Jan Kiewiet <hi@ceesjankiewiet.nl>
 
-RUN apt-get update
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libnet-snmp-perl munin-node munin-plugins-extra
-RUN apt-get clean && rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/* /etc/munin/plugins/*
+RUN apt-get update && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libnet-snmp-perl munin-node munin-plugins-extra && \
+    apt-get clean && rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/* /etc/munin/plugins/*
 
 RUN \
   sed -ri 's/^log_file.*/# \0/; \
