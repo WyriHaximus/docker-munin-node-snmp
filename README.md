@@ -17,7 +17,7 @@ docker run -e 'SNMP_ARGS=192.168.254.13' -p 12345:4949 wyrihaximus/munin-node-sn
 
 One of the goals is to keep this container so small and fast as possible. Currently it only uses 10MB in memory when running.
 
-![Resource Usage](resources.png)
+![Resource Usage](https://github.com/WyriHaximus/docker-munin-node-snmp/raw/master/resources.png)
 
 ## Inspired by ##
 
