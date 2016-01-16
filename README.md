@@ -1,5 +1,6 @@
 [munin-node SNMP](https://hub.docker.com/r/wyrihaximus/munin-node-snmp/)
 ===============
+[![ImageLayers Layers](https://img.shields.io/imagelayers/layers/wyrihaximus/munin-node-snmp/latest.svg?style=flat-square)](https://imagelayers.io/?images=wyrihaximus/munin-node-snmp:latest) [![Layer Size](https://badge.imagelayers.io/wyrihaximus/munin-node-snmp:latest.svg)](https://imagelayers.io/?images=wyrihaximus/munin-node-snmp:latest) [![Docker Stars](https://img.shields.io/docker/stars/wyrihaximus/munin-node-snmp.svg?style=flat-square)](https://hub.docker.com/r/wyrihaximus/munin-node-snmp/) [![Docker Pulls](https://img.shields.io/docker/pulls/wyrihaximus/munin-node-snmp.svg?style=flat-square)](https://hub.docker.com/r/wyrihaximus/munin-node-snmp/)
 
 ## Usage ##
 
@@ -15,7 +16,7 @@ docker run -e 'SNMP_ARGS=192.168.254.13' -p 12345:4949 wyrihaximus/munin-node-sn
 
 ## Resource usage ##
 
-One of the goals is to keep this container so small and fast as possible. Currently it only uses 10MB in memory when running.
+One of the goals is to keep this container so small and fast as possible. While the image size is bigger then desired and is subject to optimization, it only uses 10MB in memory when running.
 
 ![Resource Usage](https://github.com/WyriHaximus/docker-munin-node-snmp/raw/master/resources.png)
 
