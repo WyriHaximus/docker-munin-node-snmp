@@ -1,6 +1,6 @@
 [munin-node SNMP](https://hub.docker.com/r/wyrihaximus/munin-node-snmp/)
 ===============
-[![ImageLayers Layers](https://img.shields.io/imagelayers/layers/wyrihaximus/munin-node-snmp/latest.svg?style=flat-square)](https://imagelayers.io/?images=wyrihaximus/munin-node-snmp:latest) [![Layer Size](https://badge.imagelayers.io/wyrihaximus/munin-node-snmp:latest.svg)](https://imagelayers.io/?images=wyrihaximus/munin-node-snmp:latest) [![Docker Stars](https://img.shields.io/docker/stars/wyrihaximus/munin-node-snmp.svg?style=flat-square)](https://hub.docker.com/r/wyrihaximus/munin-node-snmp/) [![Docker Pulls](https://img.shields.io/docker/pulls/wyrihaximus/munin-node-snmp.svg?style=flat-square)](https://hub.docker.com/r/wyrihaximus/munin-node-snmp/)
+[![Layer Size](https://badge.imagelayers.io/wyrihaximus/munin-node-snmp:latest.svg)](https://imagelayers.io/?images=wyrihaximus/munin-node-snmp:latest) [![Docker Stars](https://img.shields.io/docker/stars/wyrihaximus/munin-node-snmp.svg?style=flat-square)](https://hub.docker.com/r/wyrihaximus/munin-node-snmp/) [![Docker Pulls](https://img.shields.io/docker/pulls/wyrihaximus/munin-node-snmp.svg?style=flat-square)](https://hub.docker.com/r/wyrihaximus/munin-node-snmp/)
 
 ## Usage ##
 
